@@ -1,12 +1,12 @@
-<div class="logo">
-    <a href="#" class="simple-text">
+<div class="logo bg-dark">
+    <a href="#" class="simple-text text-light">
         <div class="logo-img">
             <img src="/assets/img/ag.jpg"/>
         </div>
         Parc Agil
     </a>
 </div>
-<div class="sidebar-wrapper">
+<div class="sidebar-wrapper bg-dark">
   <div *ngIf="isMobileMenu()">
     <form class="navbar-form">
       <span class="bmd-form-group">
@@ -54,7 +54,7 @@
         </li>
     </ul>
   </div>
-    <ul class="nav">
+    <ul class="nav text-white">
         <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item">
             <a class="nav-link" [routerLink]="[menuItem.path]">
                 <i class="material-icons">{{menuItem.icon}}</i>
